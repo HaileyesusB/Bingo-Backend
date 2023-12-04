@@ -1,0 +1,3 @@
+insert into "student" ("Address", "Class", "created_at", "deleted_at", "id", "name", "phone", "updated_at") values ('Megenaga', 'A', '2023-04-12 13:15:44.882', NULL, 1, 'ABLAZE', '911111111', '2023-04-12 13:15:44.882');
+insert into "student" ("Address", "Class", "created_at", "deleted_at", "id", "name", "phone", "updated_at") values ('Megenaga', 'A', '2023-04-12 13:15:44.882', NULL, 2, 'ABLAZE_MAIN', '911111111', '2023-04-12 13:15:44.882');
+insert into "student" ("Address", "Class", "created_at", "deleted_at", "id", "name", "phone", "updated_at") values ('Megenaga', 'A', '2023-04-12 13:15:44.882', NULL, 3, 'ABLAZE_BRANCH', '911111111', '2023-04-12 13:15:44.882');

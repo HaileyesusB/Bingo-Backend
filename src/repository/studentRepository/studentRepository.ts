@@ -7,16 +7,6 @@ import { PrismaService } from 'prisma/prisma.service';
 export class StudentRepository implements IstudentRepository {
 
   constructor(private prisma: PrismaService) {}
-    /*private studentData:student[] = [
-        {
-            //id:1,
-            name: 'Ablaze',
-            phone: '0911111111',
-            Address: 'Megenaga',
-            Class: 'A'
-        }
-      ]
-      */
      async findAll(): Promise<student[]>
       {
         console.log("Inside repo")
