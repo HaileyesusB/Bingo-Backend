@@ -6,11 +6,11 @@ services:
     restart: always
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=adminAdmin@123
+      - POSTGRES_PASSWORD=adminAdmin
     volumes:
       - postgres:/var/lib/postgresql/data
     ports:
-      - '5433:5433'
+      - '5425:5432'
 
 volumes:
   postgres:

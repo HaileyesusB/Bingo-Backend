@@ -1,11 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { IstudentRepository } from '../Irepository/istudent-repository/istudent-repository.interface';
 import { student } from 'src/common/dto/student';
+import { PrismaService } from 'prisma/prisma.service';
 
 @Injectable()
 export class StudentRepository implements IstudentRepository {
 
-    private studentData:student[] = [
+  constructor(private prisma: PrismaService) {}
+    /*private studentData:student[] = [
         {
             //id:1,
             name: 'Ablaze',
@@ -14,9 +16,12 @@ export class StudentRepository implements IstudentRepository {
             Class: 'A'
         }
       ]
-      findAll()
+      */
+     async findAll(): Promise<student[]>
       {
         console.log("Inside repo")
-        return this.studentData;
+       const  findAllStudents = '../scripts/student.sql'
+        return await this.prisma.student.findMany();
       }
+
 }
