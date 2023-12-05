@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { IstudentRepository } from '../Irepository/istudent-repository/istudent-repository.interface';
 import { student } from 'src/common/dto/student';
-import { PrismaService } from 'src/repository/prisma/prisma.service';
+import { PrismaService } from '../prismaService/prisma.service';
 
 @Injectable()
 export class StudentRepository implements IstudentRepository {
